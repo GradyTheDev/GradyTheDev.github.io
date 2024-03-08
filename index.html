@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Grady Clark</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body class="w3-black">
+
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+		<!-- image in top left corner -->
+		<!-- <img src="" style="width:100%"> -->
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<p>HOME</p>
+		</a>
+		<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-user w3-xxlarge"></i>
+			<p>ABOUT</p>
+		</a>
+		<a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-briefcase w3-xxlarge"></i>
+			<p>Portfolio</p>
+		</a>
+	</nav>
+
+	<!-- Navbar on small screens (Hidden on medium and large screens) -->
+	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+			<a href="#" class="w3-bar-item w3-button">HOME</a>
+			<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+			<!-- <a href="#contact" class="w3-bar-item w3-button">CONTACT</a> -->
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="w3-padding-large" id="main">
+		<!-- Header/Home -->
+		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+			<h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Grady Clark<span class="w3-hide-small">.</span></h1>
+			<p>Web and software engineer.</p>
+			<!-- <img src="" alt="" class="w3-image" width="992" height="1108"> -->
+		</header>
+
+		<!-- About Section -->
+		<div class="w3-content w3-text-grey w3-padding-64" id="about">
+			<h2 class="w3-text-light-grey">Grady Clark</h2>
+			<hr style="width:200px" class="w3-opacity">
+			<p id="aboutMe">
+				I'm a passionate backend software developer.<br>
+				I started my coding journey when I was kid, and I'm always excited to learn more.<br>
+				I thrive on challenging projects that push me to learn and grow.<br>
+				I'm always looking for new opportunities to apply my skills and make a positive impact.<br>
+			</p>
+			<h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+
+			<label for="webSkills">Web engineering skills</label>
+			<ul id="webSkills">
+				<li>HTML, CSS, JS
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg"
+						title="HTML5" alt="HTML">
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg"
+						title="CSS3" alt="CSS">
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg"
+						title="JavaScript" alt="JavaScript">
+				</li>
+				<li>W3.css, Bootstrap</li>
+				<li>JQuery, TypeScript</li>
+				<li>React, NodeJS, PHP</li>
+				<li>Flask, Apache</li>
+				<li>MySQL, SQLite</li>
+			</ul>
+
+			<label for="SESkills">Software engineering skills</label>
+			<ul id="SESkills">
+				<li>Python, C++, Java
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg"
+						title="Python" alt="Python">
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/cplusplus/cplusplus-original.svg"
+						title="C++" alt="C++">
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/java/java-original-wordmark.svg"
+						title="Java" alt="Java">
+				</li>
+				<li>Git, Bash, Linux</li>
+				<li>VSCode</li>
+				<li>Linux, Windows</li>
+			</ul>
+
+			<label for="SESkills">Game development</label>
+			<ul id="SESkills">
+				<li>Godot, Blender
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/godot/godot-original.svg"
+						title="Godot" alt="Godot">
+					<img class="skillIcon"
+						src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg"
+						title="Blender" alt="Blender">
+				</li>
+			</ul>
+
+			And more
+
+			<br>
+
+			<!-- 		Leave this section for future published games, freelance projects, etc
+			<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+				<div class="w3-quarter w3-section">
+					<span class="w3-xlarge">11+</span><br>
+					Partners
+				</div>
+				<div class="w3-quarter w3-section">
+					<span class="w3-xlarge">55+</span><br>
+					Projects Done
+				</div>
+				<div class="w3-quarter w3-section">
+					<span class="w3-xlarge">89+</span><br>
+					Happy Clients
+				</div>
+				<div class="w3-quarter w3-section">
+					<span class="w3-xlarge">150+</span><br>
+					Meetings
+				</div>
+			</div> -->
+
+			<button class="w3-button w3-white w3-padding-large w3-section w3-round" onclick="window.location.href='https://drive.google.com/file/d/1SoWxg5ld8rjc6OpY4QedS-IuQQJkoj9E/view?usp=sharing';">
+				<i class="fa fa-download"></i> Download Resume
+			</button>
+
+			<!-- Testimonials (Referrals, Past Clients, etc)-->
+			<!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+			<img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+				style="width:80px">
+			<p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+			<p>John Doe saved us from a web disaster.</p><br>
+
+			<img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+				style="width:80px">
+			<p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+			<p>No one is better than John Doe.</p> -->
+			<!-- End Testimonials Section -->
+		</div>
+		<!-- End About Section -->
+
+		<!-- Portfolio Section -->
+		<div class="w3-padding-64 w3-content" id="portfolio">
+			<h2 class="w3-text-light-grey">Portfolio</h2>
+			<hr style="width:200px" class="w3-opacity">
+
+			<div class="w3-row-padding" style="margin:0 -16px">
+				<iframe class="itchProject" frameborder="0"
+					src="https://itch.io/embed/2259668?linkback=true&amp;dark=true">
+					<a href="https://gradythedev.itch.io/terra4me">Terra4Me by GradyTheDev, Rauschsound, tetsu,
+						vulkaara, alm4nditte, wovri, Clair de Lou
+					</a>
+				</iframe>
+
+				<br>
+
+				<iframe class="itchProject" frameborder="0"
+					src="https://itch.io/embed/2343182?linkback=true&amp;dark=true">
+					<a href="https://gradythedev.itch.io/secrets-of-the-old-graveyard">Secrets of the old
+						graveyard by GradyTheDev, vulkaara, Clair de Lou, alm4nditte
+					</a>
+				</iframe>
+
+				<br>
+
+				<iframe class="itchProject" frameborder="0"
+					src="https://itch.io/embed/2214418?linkback=true&amp;dark=true">
+					<a href="https://gradythedev.itch.io/tower-of-eden">Tower of Eden by GradyTheDev,tetsu, vulkaara,
+						HighTowerBK, alm4nditte, Kingsley Ezenwoye, wizcats, wovri
+					</a>
+				</iframe>
+			</div>
+		</div>
+		<!-- End Portfolio Section -->
+
+		<!-- Contact Section -->
+		<!-- <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+			<h2 class="w3-text-light-grey">Contact Me</h2>
+			<hr style="width:200px" class="w3-opacity">
+
+			<div class="w3-section">
+				<p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+				<p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+				<p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com
+				</p>
+			</div><br>
+			<p>Let's get in touch. Send me a message:</p>
+
+			<form action="/action_page.php" target="_blank">
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+				<p>
+					<button class="w3-button w3-light-grey w3-padding-large" type="submit">
+						<i class="fa fa-paper-plane"></i> SEND MESSAGE
+					</button>
+				</p>
+			</form>
+		</div> -->
+		<!-- End Contact Section -->
+
+		<!-- <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<i class="fa fa-snapchat w3-hover-opacity"></i>
+			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+			<i class="fa fa-twitter w3-hover-opacity"></i>
+			<i class="fa fa-linkedin w3-hover-opacity"></i>
+			<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+					class="w3-hover-text-green">w3.css</a></p>
+		</footer> -->
+
+	</div>
+
+</body>
+
+</html>
