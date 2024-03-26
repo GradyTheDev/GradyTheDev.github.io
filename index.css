@@ -1,5 +1,5 @@
 * {
-	font-family: "Montserrat", sans-serif
+	font-family: "Montserrat", sans-serif;
 }
 
 #title {
@@ -10,6 +10,10 @@
 #subtitle {
 	/*1.5em+ Fixes weird behavior*/
 	min-height: 1.5em !important;
+}
+
+#home {
+	height: 20em;
 }
 
 .w3-row-padding img {
