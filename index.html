@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Grady Clark</title>
+	<title>Grady's Portfolio Website</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,8 +15,6 @@
 
 	<!-- Icon Bar (Sidebar - hidden on small screens) -->
 	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-		<!-- image in top left corner -->
-		<!-- <img src="" style="width:100%"> -->
 		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
 			<i class="fa fa-home w3-xxlarge"></i>
 			<p>HOME</p>
@@ -29,74 +27,94 @@
 			<i class="fa fa-briefcase w3-xxlarge"></i>
 			<p>Portfolio</p>
 		</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p>Contact</p>
+		</a>
 	</nav>
 
 	<!-- Navbar on small screens (Hidden on medium and large screens) -->
 	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-			<a href="#" class="w3-bar-item w3-button">HOME</a>
-			<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-			<a href="#portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
+		<div class="w3-cell-row w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+			<a href="#" class="w3-bar-item w3-button w3-cell">HOME</a>
+			<a href="#about" class="w3-bar-item w3-button w3-cell">ABOUT</a>
+			<a href="#portfolio" class="w3-bar-item w3-button w3-cell">PORTFOLIO</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-cell">CONTACT</a>
 		</div>
 	</div>
 
 	<!-- Page Content -->
 	<div class="w3-padding-large" id="main">
 		<!-- Header/Home -->
-		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-			<h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Grady Clark<span class="w3-hide-small">.</span></h1>
-			<p>Web and software engineer.</p>
+		<header class="w3-container w3-padding-32 w3-center w3-black w3-text-white" id="home">
+			<noscript>
+				<h1 class="w3-jumbo" id="title"><span class="w3-hide-small">I'm </span>Grady Clark<span
+						class="w3-hide-small"></span></h1>
+				<p class="w3-large w3-text-green" id="subtitle">Software Engineer</p>
+			</noscript>
+			<h1 class="w3-jumbo" id="title"></h1>
+			<p class="w3-large w3-text-green" id="subtitle"></p>
 			<!-- <img src="" alt="" class="w3-image" width="992" height="1108"> -->
 		</header>
 
 		<!-- About Section -->
 		<div class="w3-content w3-text-grey w3-padding-64" id="about">
-			<h2 class="w3-text-light-grey">Grady Clark</h2>
+			<h2 class="w3-text-white">About me</h2>
 			<hr style="width:200px" class="w3-opacity">
 			<p id="aboutMe">
-				I'm a passionate backend software developer.<br>
-				I started my coding journey when I was kid, and I'm always excited to learn more.<br>
-				I thrive on challenging projects that push me to learn and grow.<br>
-				I'm always looking for new opportunities to apply my skills and make a positive impact.<br>
+				I am a software engineer with a decade of self-taught development expertise,<br>
+				seeking a transition to a full-stack web developer role.<br>
+				Bringing leadership experience from managing game development teams,<br>
+				programming robots, websites, and various DIY projects.<br>
 			</p>
-			<h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
 
-			<label for="webSkills">Web engineering skills</label>
+			<h3 class="w3-padding-16 w3-text-white">My Skills</h3>
+			<!-- <hr style="width:200px" class="w3-opacity"> -->
+			<label for="webSkills">Web engineering</label>
 			<ul id="webSkills">
-				<li>HTML, CSS, JS
+				<li>HTML, CSS, JS, TS
 					<img class="skillIcon"
 						src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg"
 						title="HTML5" alt="HTML">
 					<img class="skillIcon"
-						src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg"
-						title="CSS3" alt="CSS">
+						src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain.svg" title="CSS3"
+						alt="CSS">
 					<img class="skillIcon"
 						src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg"
 						title="JavaScript" alt="JavaScript">
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg"
+						title="TypeScript" alt="TypeScript">
 				</li>
-				<li>W3.css, Bootstrap</li>
-				<li>JQuery, TypeScript</li>
-				<li>React, NodeJS, PHP</li>
-				<li>Flask, Apache</li>
-				<li>MySQL, SQLite</li>
+				<li>W3.css, Bootstrap, JQuery</li>
+				<li>React, NodeJS</li>
+				<li>MySQL, SQLite, MariaDB</li>
+				<li>Django, Flask, Apache, PHP</li>
 			</ul>
 
-			<label for="SESkills">Software engineering skills</label>
+			<label for="SESkills">Software engineering</label>
 			<ul id="SESkills">
-				<li>Python, C++, Java
+				<li>Python, Java, C++, C#
 					<img class="skillIcon"
 						src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg"
 						title="Python" alt="Python">
+
+					<img class="skillIcon"
+						src="https://github.com/devicons/devicon/raw/master/icons/java/java-original.svg" title="Java"
+						alt="Java">
+
 					<img class="skillIcon"
 						src="https://github.com/devicons/devicon/raw/master/icons/cplusplus/cplusplus-original.svg"
 						title="C++" alt="C++">
+
 					<img class="skillIcon"
-						src="https://github.com/devicons/devicon/raw/master/icons/java/java-original-wordmark.svg"
-						title="Java" alt="Java">
+						src="https://github.com/devicons/devicon/raw/master/icons/csharp/csharp-original.svg" title="C#"
+						alt="C#">
 				</li>
-				<li>Git, Bash, Linux</li>
-				<li>VSCode</li>
-				<li>Linux, Windows</li>
+				<li>Git, Bash, Shell</li>
+				<li>Docker</li>
+				<li>PyCharm, VSCode, NetBeans</li>
+				<li>Fedora RedHat Linux, Windows</li>
 			</ul>
 
 			<label for="SESkills">Game development</label>
@@ -109,6 +127,7 @@
 						src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg"
 						title="Blender" alt="Blender">
 				</li>
+				<li>GIMP, Audacity</li>
 			</ul>
 
 			And more
@@ -134,10 +153,10 @@
 					Meetings
 				</div>
 			</div> -->
-
-			<button class="w3-button w3-white w3-padding-large w3-section w3-round" onclick="window.location.href='https://drive.google.com/file/d/1SoWxg5ld8rjc6OpY4QedS-IuQQJkoj9E/view?usp=sharing';">
+			<a class="w3-button w3-blue w3-padding-large w3-section w3-round" target="_blank"
+				href='https://drive.google.com/file/d/1dk-RArlykbBiiyBd5Vf-NiFmAuQWenuo/view?usp=sharing'>
 				<i class="fa fa-download"></i> Download Resume
-			</button>
+			</a>
 
 			<!-- Testimonials (Referrals, Past Clients, etc)-->
 			<!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
@@ -156,7 +175,7 @@
 
 		<!-- Portfolio Section -->
 		<div class="w3-padding-64 w3-content" id="portfolio">
-			<h2 class="w3-text-light-grey">Portfolio</h2>
+			<h2 class="w3-text-white">Portfolio</h2>
 			<hr style="width:200px" class="w3-opacity">
 
 			<div class="w3-row-padding" style="margin:0 -16px">
@@ -189,43 +208,41 @@
 		<!-- End Portfolio Section -->
 
 		<!-- Contact Section -->
-		<!-- <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-			<h2 class="w3-text-light-grey">Contact Me</h2>
+		<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+			<h2 class="w3-text-white">Contact Me</h2>
 			<hr style="width:200px" class="w3-opacity">
 
 			<div class="w3-section">
-				<p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-				<p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-				<p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com
+				<p>
+					<a class="w3-hover-text-blue" href="mailto:gradythedev@gmail.com">
+						<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i><!--  
+						-->GradyTheDev@gmail.com
+					</a>
+				</p>
+
+				<p>
+					<a class="w3-hover-text-blue" href="https://www.linkedin.com/in/grady-clark-4ba112195/">
+						<i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i><!--  
+						-->www.linkedin.com/in/grady-clark-4ba112195
+					</a>
+				</p>
+
+				<p>
+					<a class="w3-hover-text-blue" href="https://github.com/GradyTheDev">
+						<i class="fa fa-github fa-fw w3-xxlarge w3-margin-right"></i><!--  
+						-->github.com/GradyTheDev
+					</a>
 				</p>
 			</div><br>
-			<p>Let's get in touch. Send me a message:</p>
-
-			<form action="/action_page.php" target="_blank">
-				<p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-				<p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-				<p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-				<p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-				<p>
-					<button class="w3-button w3-light-grey w3-padding-large" type="submit">
-						<i class="fa fa-paper-plane"></i> SEND MESSAGE
-					</button>
-				</p>
-			</form>
-		</div> -->
+		</div>
 		<!-- End Contact Section -->
 
-		<!-- <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-			<i class="fa fa-facebook-official w3-hover-opacity"></i>
-			<i class="fa fa-instagram w3-hover-opacity"></i>
-			<i class="fa fa-snapchat w3-hover-opacity"></i>
-			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
-			<i class="fa fa-twitter w3-hover-opacity"></i>
-			<i class="fa fa-linkedin w3-hover-opacity"></i>
+		<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+			<hr style="width:200px" class="w3-opacity">
 			<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-					class="w3-hover-text-green">w3.css</a></p>
-		</footer> -->
-
+					class="w3-hover-text-blue">w3.css</a></p>
+		</footer>
+		<script src="index.min.js"></script>
 	</div>
 
 </body>

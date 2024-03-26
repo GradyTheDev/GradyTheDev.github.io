@@ -1,11 +1,15 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* {
 	font-family: "Montserrat", sans-serif
+}
+
+#title {
+	/*1.5em+ Fixes weird behavior*/
+	min-height: 1.5em !important;
+}
+
+#subtitle {
+	/*1.5em+ Fixes weird behavior*/
+	min-height: 1.5em !important;
 }
 
 .w3-row-padding img {
@@ -28,10 +32,6 @@ h6 {
 	#main {
 		margin-left: 0
 	}
-}
-
-#myNavbar div a {
-	width: 33.33%;
 }
 
 .skillIcon {
